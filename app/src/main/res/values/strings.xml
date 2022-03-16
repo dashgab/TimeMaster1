@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">TimeMaster</string>
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="enter">Войти</string>
+    <string name="register">Зарегистрироваться</string>
+    <string name="google">Продолжить с Google</string>
+    <string name="or">или</string>
+    <string name="welcoming">Добро пожаловать \nв\n Time Master</string>
+    <string name="login_input_error">Ошибка ввода данных!</string>
+    <string name="registration">Регистрация</string>
+    <string name="write_email">Введите email</string>
+    <string name="name">Введите имя</string>
+    <string name="create_login">Придумайте логин</string>
+    <string name="create_password">Придумайте пароль</string>
+    <string name="repeat_password">Повторите пароль</string>
+    <string name="register_success">Регистрация прошла успешно!</string>
+    <string name="register_error_user_exist">Пользователь уже существует!</string>
+    <string name="register_error_fields">Проверьте введённые данные!</string>
+    <string name="enter_login_exist_error">Неверный логин или пароль!</string>
+    <string name="exit">Выйти</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Главная</string>
+    <string name="menu_gallery">Галерея</string>
+    <string name="menu_slideshow">Слайдшоу</string>
+    <string name="timer">Таймер</string>
+    <string name="graph">Аналитика</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="checklist">Список</string>
+    <string name="calendar">Календарь</string>
+</resources>
