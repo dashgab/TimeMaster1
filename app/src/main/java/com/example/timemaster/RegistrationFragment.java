@@ -3,6 +3,7 @@ package com.example.timemaster;
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProviders;
 
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -13,6 +14,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+//import com.example.timemaster.model.User;
+
 
 public class RegistrationFragment extends Fragment {
 
@@ -22,6 +25,9 @@ public class RegistrationFragment extends Fragment {
     private EditText repeatNewPasswordEdit;
     private Button registerButton;
     private SharedPreferencesHelper mSharedPreferencesHelper;
+    private MainViewModel mainViewModel;
+    private User user;
+
 
     public static RegistrationFragment newInstance() {
         return new RegistrationFragment();
@@ -31,6 +37,11 @@ public class RegistrationFragment extends Fragment {
         @Override
         public void onClick(View view){
             if (isInputValid()) {
+                /*user.login=emailEdit.getText().toString();
+                user.password=newPasswordEdit.getText().toString();
+                user.name=nameEdit.getText().toString();
+                App.getInstance().getUserDao().addUser(user);*/
+
                 boolean isAdded = mSharedPreferencesHelper.addUser(new User(
                         emailEdit.getText().toString(),
                         newPasswordEdit.getText().toString(),
@@ -42,6 +53,9 @@ public class RegistrationFragment extends Fragment {
                 } else {
                     showMessage(R.string.register_error_user_exist);
                 }
+                showMessage(R.string.register_success);
+                getFragmentManager().popBackStack();
+
             } else {
                 showMessage(R.string.register_error_fields);
             }
@@ -55,7 +69,7 @@ public class RegistrationFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_registration, container, false);
 
-        mSharedPreferencesHelper = new SharedPreferencesHelper(getActivity());
+        //mSharedPreferencesHelper = new SharedPreferencesHelper(getActivity());
 
         emailEdit = view.findViewById(R.id.email_edit_text);
         nameEdit = view.findViewById(R.id.name_edit_text);
@@ -64,6 +78,8 @@ public class RegistrationFragment extends Fragment {
         registerButton = view.findViewById(R.id.register_button_2);
 
         registerButton.setOnClickListener(OnRegisterClickListener);
+        mainViewModel = ViewModelProviders.of(this).get(MainViewModel.class);
+
 
         return view;
     }

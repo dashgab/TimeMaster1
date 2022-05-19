@@ -37,6 +37,7 @@ public class GraphFragment extends androidx.fragment.app.Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        ((ProfileActivity) getActivity()).getSupportActionBar().setTitle("Аналитика");
         return inflater.inflate(R.layout.fragment_graph, container, false);
     }
 }

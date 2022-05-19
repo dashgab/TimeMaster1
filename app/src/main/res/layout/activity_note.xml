@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/main_color"
+        app:popupTheme="@style/Theme.MyApplication.PopupOverlay"
+        app:titleTextColor="@color/white"
+        android:theme="@style/ToolbarTheme"/>
+
+    <EditText
+        android:id="@+id/note_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/note_text_hint"
+        android:minHeight="100dp"
+        android:gravity="top"
+        android:layout_margin="24dp"
+        />
+
+</LinearLayout>

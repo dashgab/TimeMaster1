@@ -40,6 +40,7 @@
             android:fontFamily="@font/oswald"
             android:gravity="center_horizontal"
             android:text="@string/welcoming"
+            android:textColor="@color/main_color"
             android:textSize="30dp" />
 
 
@@ -78,9 +79,9 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
+            android:fontFamily="@font/oswald"
             android:text="@string/enter"
-            app:backgroundTint="@color/mainButtons"
-            android:fontFamily="@font/oswald"/>
+            app:backgroundTint="@color/mainButtons" />
 
         <Button
             android:id="@+id/register_button"
@@ -99,8 +100,6 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp">
-
-
 
             <View
                 android:id="@+id/leftStripe"

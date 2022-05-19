@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import android.app.Fragment;
 
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 
@@ -16,6 +17,7 @@ import android.view.ViewGroup;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.tabs.TabLayout;
 
 
@@ -28,6 +30,7 @@ public class HomeFragment extends androidx.fragment.app.Fragment {
     private TabLayout tabLayout;
     private ViewPager viewPager;
     private VPAdapter vpAdapter;
+
 
     public HomeFragment() {
         // Required empty public constructor
@@ -55,12 +58,17 @@ public class HomeFragment extends androidx.fragment.app.Fragment {
         tabLayout = v.findViewById(R.id.tab_layout);
         viewPager = v.findViewById(R.id.pager);
 
+        ((ProfileActivity) getActivity()).getSupportActionBar().setTitle("Главная");
+
+
+
         tabLayout.setupWithViewPager(viewPager);
 
         vpAdapter = new VPAdapter(getChildFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
         vpAdapter.addFragment(ChecklistFragment.newInstance(), "Список");
         vpAdapter.addFragment(CalendarFragment.newInstance(), "Календарь");
         viewPager.setAdapter(vpAdapter);
+
         return v;
     }
 

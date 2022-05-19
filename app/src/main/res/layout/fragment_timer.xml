@@ -1,14 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TimerFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:weightSum="4">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/countdown_textview_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="25:00"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:layout_gravity="center"
+        android:layout_weight="3"/>
 
-</FrameLayout>
+    <EditText
+        android:id="@+id/current_task_name_textview_main"
+        android:layout_width="265dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:cursorVisible="true"
+        android:defaultValue="Task 1"
+        android:hint="Введите название задачи"
+        android:inputType="textCapSentences|textShortMessage|textMultiLine"
+        android:scrollHorizontally="false"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/session_completed_value_textview_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/main_color"
+        tools:text="1"
+        android:gravity="center_vertical"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/insert_point"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/finish_imageview_main"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:clickable="true"
+            android:src="@drawable/ic_baseline_check_circle_outline_24"
+            />
+
+        <ToggleButton
+            android:id="@+id/timer_button_main"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/ic_start_timer"
+            android:textOff=""
+            android:textOn=""/>
+
+        <ImageView
+            android:id="@+id/settings_imageview_main"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:clickable="true"
+            android:src="@drawable/ic_baseline_settings_24"
+            android:contentDescription="@string/settings_imageview_content_desc"
+            android:scaleType="fitXY"/>
+
+    </LinearLayout>
+
+</LinearLayout>

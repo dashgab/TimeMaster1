@@ -3,9 +3,9 @@ package com.example.timemaster;
 //import android.app.Fragment;
 import androidx.fragment.app.Fragment;
 
-        import android.os.Bundle;
-        import android.view.MenuItem;
-        import android.widget.Button;
+import android.os.Bundle;
+import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -21,7 +21,9 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-        import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.navigation.NavigationView;
+//import com.example.timemaster.model.User;
+
 
 
 public class ProfileActivity extends AppCompatActivity  implements NavigationView.OnNavigationItemSelectedListener {
@@ -109,9 +111,9 @@ public class ProfileActivity extends AppCompatActivity  implements NavigationVie
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
 
-        if (id == R.id.nav_gallery) {
+        if (id == R.id.nav_settings) {
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_exit) {
 
         }
 
