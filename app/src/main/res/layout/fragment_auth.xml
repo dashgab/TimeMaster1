@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#1b434d"
+    android:padding="15dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,13 +23,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center">
-            <ImageView
+            <!--<ImageView
                 android:id="@+id/icon_image"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:src="@drawable/icon2"
                 android:scaleType="centerInside"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center"/>-->
         </LinearLayout>
 
 
@@ -37,12 +39,12 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:layout_weight="4"
-            android:fontFamily="@font/oswald"
-            android:gravity="center_horizontal"
+            android:fontFamily="@font/gilroybold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:text="@string/welcoming"
-            android:textColor="@color/main_color"
+            android:textColor="#f5fcfe"
             android:textSize="30dp" />
-
 
 
     </LinearLayout>
@@ -61,7 +63,14 @@
             android:hint="@string/login"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:fontFamily="@font/oswald"/>
+            android:fontFamily="@font/gilroyregular"
+            android:backgroundTint="#f5fcfe"
+            android:textColorHint="#f5fcfe"
+            android:textColor="@color/text_color"
+            android:inputType="textEmailAddress"
+            android:nextFocusDown="@+id/password_edit_text"
+
+            />
 
         <EditText
             android:id="@+id/password_edit_text"
@@ -71,7 +80,11 @@
             android:layout_marginRight="20dp"
             android:hint="@string/password"
             android:inputType="textPassword"
-            android:fontFamily="@font/oswald"/>
+            android:fontFamily="@font/gilroyregular"
+            android:backgroundTint="#f5fcfe"
+            android:textColorHint="#f5fcfe"
+            android:textColor="@color/text_color"
+            android:nextFocusDown="@+id/enter_button"/>
 
         <Button
             android:id="@+id/enter_button"
@@ -79,9 +92,9 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:fontFamily="@font/oswald"
+            android:fontFamily="@font/gilroyregular"
             android:text="@string/enter"
-            app:backgroundTint="@color/mainButtons" />
+            app:backgroundTint="#d3c2f8" />
 
         <Button
             android:id="@+id/register_button"
@@ -90,8 +103,9 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:text="@string/register"
-            app:backgroundTint="@color/mainButtons"
-            android:fontFamily="@font/oswald"
+
+            android:fontFamily="@font/gilroyregular"
+            app:backgroundTint="#d3c2f8"
             />
 
 
@@ -125,7 +139,9 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/leftStripe"
-                app:layout_constraintEnd_toStartOf="@+id/rightStripe"/>
+                app:layout_constraintEnd_toStartOf="@+id/rightStripe"
+                android:fontFamily="@font/gilroyregular"
+                android:textColor="#f5fcfe"/>
 
             <View
                 android:id="@+id/rightStripe"
@@ -153,8 +169,8 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:text="@string/google"
-            app:backgroundTint="@color/mainButtons"
-            android:fontFamily="@font/oswald"/>
+            android:fontFamily="@font/gilroyregular"
+            app:backgroundTint="#d3c2f8"/>
 
     </LinearLayout>
 

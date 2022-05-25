@@ -15,6 +15,7 @@ import android.widget.Spinner;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NavUtils;
 import androidx.fragment.app.Fragment;
 
 import butterknife.BindView;
@@ -31,7 +32,7 @@ import static com.example.timemaster.utils.VolumeSeekBarUtils.maxVolume;
 
 public class TimerSettingsActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener, SeekBar.OnSeekBarChangeListener {
 
-    @BindView(R.id.duration_session_text)
+    @BindView(R.id.duration_session_spinner)
     Spinner workDurationSpinner;
     @BindView(R.id.duration_short_break_spinner)
     Spinner shortBreakDurationSpinner;
@@ -151,7 +152,7 @@ public class TimerSettingsActivity extends AppCompatActivity implements AdapterV
 
     }
 
-    /*
+
     @Override
     public void onBackPressed() {
         super.onBackPressed();
@@ -159,6 +160,7 @@ public class TimerSettingsActivity extends AppCompatActivity implements AdapterV
         overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
     }
 
+    /*
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {

@@ -26,7 +26,6 @@
         android:layout_gravity="center"
         android:layout_margin="8dp"
         android:cursorVisible="true"
-        android:defaultValue="Task 1"
         android:hint="Введите название задачи"
         android:inputType="textCapSentences|textShortMessage|textMultiLine"
         android:scrollHorizontally="false"

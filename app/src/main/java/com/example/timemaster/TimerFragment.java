@@ -345,10 +345,10 @@ public class TimerFragment extends androidx.fragment.app.Fragment implements Vie
             // Settings button is clicked
             case R.id.settings_imageview_main:
                 // launch SettingsActivity
-                /*Intent intent = new Intent(getActivity(), TimerSettingsActivity.class);
+                Intent intent = new Intent(getActivity(), TimerSettingsActivity.class);
                 startActivity(intent);
                 getActivity().overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
-                break;*/
+                break;
 
             case R.id.timer_button_main:
                 Date date = new Date(System.currentTimeMillis()); //or simply new Date();

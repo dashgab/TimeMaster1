@@ -7,10 +7,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="mainButtons">#68C3FF</color>
+    <color name="mainButtons">#d3c2f8</color>
     <color name="authButtons2">#440CB8</color>
     <color name="line_color">#E6EEEE</color>
-    <color name="main_color">#68C3FF</color>
+    <color name="main_color">#1b434d</color>
     <color name="active_tab_color">#68C3FF</color>
     <color name="inactive_tab_color">#BDC8D1</color>
+    <color name="text_color">#f5fcfe</color>
 </resources>

@@ -45,6 +45,11 @@
             android:theme="@style/Theme.TimeMaster.NoActionBar">
         </activity>
 
+        <activity
+            android:name=".TimerSettingsActivity">
+            android:theme="@style/Theme.TimeMaster.NoActionBar">
+        </activity>
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

@@ -8,9 +8,8 @@ import android.os.Build;
 
 import androidx.room.Room;
 
-import com.example.timemaster.data.AppDatabase;
-import com.example.timemaster.data.FolderDao;
-import com.example.timemaster.data.NoteDao;
+import com.example.timemaster.model.AppDatabase;
+import com.example.timemaster.model.NoteDao;
 //import com.example.timemaster.data.UserDao;
 
 import java.util.Objects;

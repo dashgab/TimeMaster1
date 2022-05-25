@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_margin="20dp">
+    android:padding="30dp"
+    android:background="@color/main_color">
 
     <TextView
         android:layout_width="match_parent"
@@ -13,59 +14,77 @@
         android:text="@string/registration"
         android:gravity="center"
         android:textSize="25dp"
-        android:fontFamily="@font/oswald"
+        android:fontFamily="@font/gilroybold"
         android:layout_marginBottom="30dp"
-        android:textColor="@color/black"
+        android:textColor="@color/text_color"
         />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/name"
-        android:fontFamily="@font/oswald" />
+        android:fontFamily="@font/gilroyregular"
+        android:textColor="@color/text_color"/>
     <EditText
         android:id="@+id/name_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="text"
-        android:fontFamily="@font/oswald"/>
+        android:inputType="textPersonName"
+        android:fontFamily="@font/gilroyregular"
+        android:backgroundTint="@color/text_color"
+        android:textColor="@color/text_color"
+        android:nextFocusDown="@+id/email_edit_text"
+        />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/write_email"
-        android:fontFamily="@font/oswald" />
+        android:fontFamily="@font/gilroyregular"
+        android:textColor="@color/text_color"/>
     <EditText
         android:id="@+id/email_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/oswald"/>
+        android:fontFamily="@font/gilroyregular"
+        android:backgroundTint="@color/text_color"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/text_color"
+        android:nextFocusDown="@+id/new_password_edit_text"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/create_password"
-        android:fontFamily="@font/oswald" />
+        android:fontFamily="@font/gilroyregular"
+        android:textColor="@color/text_color"/>
     <EditText
         android:id="@+id/new_password_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
-        android:fontFamily="@font/oswald"/>
+        android:fontFamily="@font/gilroyregular"
+        android:textColor="@color/text_color"
+        android:backgroundTint="@color/text_color"
+        android:nextFocusDown="@+id/repeat_new_password_edit_text"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/repeat_password"
-        android:fontFamily="@font/oswald" />
+        android:fontFamily="@font/gilroyregular"
+        android:textColor="@color/text_color"/>
     <EditText
         android:id="@+id/repeat_new_password_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
-        android:fontFamily="@font/oswald"/>
+        android:fontFamily="@font/gilroyregular"
+        android:backgroundTint="@color/text_color"
+        android:textColor="@color/text_color"
+        android:nextFocusDown="@+id/register_button_2"/>
     <Button
         android:id="@+id/register_button_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/register"
-        android:fontFamily="@font/oswald"
+        android:fontFamily="@font/gilroyregular"
         app:backgroundTint="@color/mainButtons"/>
 
 

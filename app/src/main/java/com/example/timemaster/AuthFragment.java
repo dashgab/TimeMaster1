@@ -148,7 +148,7 @@ public class AuthFragment extends Fragment {
             if (isLoginValid() && isPasswordValid())
             {
                 for (User user : mSharedPreferencesHelper.getUsers()) {
-                    if (user.getEmail().equalsIgnoreCase(loginEdit.getText().toString()) && user.getPassword().equals(passwordEdit.getText().toString())) {
+                    if (user.getEmail().equalsIgnoreCase(loginEdit.getText().toString().trim()) && user.getPassword().equals(passwordEdit.getText().toString())) {
                         Intent startProfileIntent = new Intent(getActivity(), ProfileActivity.class);
                         startProfileIntent.putExtra(ProfileActivity.USER_KEY, user);
                         startActivity(startProfileIntent);

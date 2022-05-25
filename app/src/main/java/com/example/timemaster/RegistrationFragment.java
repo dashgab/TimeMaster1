@@ -69,7 +69,7 @@ public class RegistrationFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_registration, container, false);
 
-        //mSharedPreferencesHelper = new SharedPreferencesHelper(getActivity());
+        mSharedPreferencesHelper = new SharedPreferencesHelper(getActivity());
 
         emailEdit = view.findViewById(R.id.email_edit_text);
         nameEdit = view.findViewById(R.id.name_edit_text);
@@ -78,7 +78,7 @@ public class RegistrationFragment extends Fragment {
         registerButton = view.findViewById(R.id.register_button_2);
 
         registerButton.setOnClickListener(OnRegisterClickListener);
-        mainViewModel = ViewModelProviders.of(this).get(MainViewModel.class);
+        //mainViewModel = ViewModelProviders.of(this).get(MainViewModel.class);
 
 
         return view;
