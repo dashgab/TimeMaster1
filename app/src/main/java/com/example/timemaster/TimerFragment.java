@@ -172,7 +172,7 @@ public class TimerFragment extends androidx.fragment.app.Fragment implements Vie
         message.setText(prefs.getString("autoSave", ""));
 
         if (message.getText().toString().trim().length() == 0)
-            message.setText("Task 1", TextView.BufferType.EDITABLE);
+            message.setText("Задача", TextView.BufferType.EDITABLE);
 
 
         message.addTextChangedListener(new TextWatcher() {
@@ -325,7 +325,7 @@ public class TimerFragment extends androidx.fragment.app.Fragment implements Vie
         outState.putString("currentCountDown", currentCountDown);
     }
 
-   /* @Override
+    /*@Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         currentCountDown = savedInstanceState.getString("currentCountDown");

@@ -1,0 +1,18 @@
+<?xml version ="1.0" encoding ="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:key="@string/pref_color_key_switch"
+        android:title="@string/pref_color_switch"
+        android:summary="@string/pref_color_switch_summ"
+        android:defaultValue="false" />
+    <ListPreference
+        android:dependency="@string/pref_color_key_switch"
+        android:key="@string/pref_color_key"
+        android:title="@string/pref_color_title"
+        android:dialogTitle="@string/pref_color_title"
+        android:entries="@array/pref_colors"
+        android:entryValues="@array/pref_colors"
+        android:defaultValue="@string/pref_color_red"
+        android:summary="%s"/>
+</PreferenceScreen>

@@ -51,4 +51,9 @@
         <item name="colorAccent">@color/mainButtons</item>
     </style>
 
+    <style name="roundedCorners" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+    </style>
+
 </resources>

@@ -9,31 +9,41 @@
     android:gravity="center"
     android:orientation="horizontal">
 
-    <CheckBox
-        android:id="@+id/completed_check_box"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:theme="@style/colored_checkbox"
-        android:tint="@color/black"
+
+    <TextView
+        android:id="@+id/color_text"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:gravity="center_vertical"
         />
 
     <TextView
-        android:id="@+id/note_text"
+        android:id="@+id/folder_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:minHeight="64dp"
+        android:minHeight="40dp"
         android:gravity="center_vertical"
+        android:layout_marginStart="20dp"
         tools:text="some text for testing"
-        android:textColor="@color/black"/>
+        android:textColor="#D73A3839"/>
 
     <ImageView
-        android:id="@+id/delete_button"
+        android:id="@+id/delete_folder_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:src="@drawable/ic_delete"
-        app:tint="#A12525"/>
+        app:tint="#A12525"
+        />
+
+    <!--
+    <ImageView
+        android:id="@+id/color_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        />
+        -->
 
 </LinearLayout>

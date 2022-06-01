@@ -16,14 +16,26 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
+    <!--
+    <include
+        android:id="@+id/folder_list_rv"
+        layout="@layout/folder_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />-->
+
+
     <com.google.android.material.navigation.NavigationView
-        android:id="@+id/bottom_nav_view"
+        android:id="@+id/left_nav_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header_left"
-        app:menu="@menu/left_nav_menu" />
+        app:menu="@menu/left_nav_menu" >
+
+
+
+    </com.google.android.material.navigation.NavigationView>
 
 </androidx.drawerlayout.widget.DrawerLayout>
 

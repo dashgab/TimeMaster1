@@ -6,7 +6,7 @@
     <CalendarView
         android:id="@+id/calendarView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:onClick="onClick"
         android:selectedWeekBackgroundColor="#ff0000"
         android:weekNumberColor="#0000ff"

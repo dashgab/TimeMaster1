@@ -23,14 +23,19 @@ public interface FolderDao {
     LiveData<List<Folder>> getAllLiveData();//бновлять список с данными легко
 
     //возврат списка с определенными айди
-    @Query("SELECT * FROM Note WHERE uid IN (:folderIds)")
+    @Query("SELECT * FROM Folder WHERE uid IN (:folderIds)")
     List<Folder> loadAllByIds(int[] folderIds);
 
-    @Query("SELECT * FROM Note WHERE uid = :uid LIMIT 1")
+    @Query("SELECT * FROM Folder WHERE uid = :uid LIMIT 1")
     Folder findById(int uid);
+
+    /*@Query("SELECT * FROM Folder")
+     LiveData<List<DrawerMenu>> loadDrawerMenu();*/
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)//если захочу вставить в бд заметку с id, которая существует, будет поизведена замена сущености на новую
     void insert(Folder folder);
+    @Insert
+    void insertAll(Folder[] folders);
 
     @Update
     void update(Folder folder);

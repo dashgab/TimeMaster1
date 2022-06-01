@@ -9,6 +9,70 @@ import androidx.room.PrimaryKey;
 import java.util.Objects;
 
 @Entity
+public class Folder {
+    public int getUid() {
+        return uid;
+    }
+
+    public void setUid(int uid) {
+        this.uid = uid;
+    }
+
+    public int getId_user() {
+        return id_user;
+    }
+
+    public void setId_user(int id_user) {
+        this.id_user = id_user;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public Folder(int uid, int id_user, String name, String color) {
+        this.uid = uid;
+        this.id_user = id_user;
+        this.name = name;
+        this.color = color;
+    }
+
+    public Folder() {
+
+    }
+
+    @PrimaryKey(autoGenerate = true)
+    public int uid;
+
+    @ColumnInfo(name = "id_user")
+    public int id_user;
+
+    @ColumnInfo(name = "name")
+    public String name;
+
+    @ColumnInfo(name = "color")
+    public String color;
+
+
+
+
+
+
+}
+
+/*@Entity
 public class Folder implements Parcelable{
 
     @PrimaryKey(autoGenerate = true)
@@ -23,9 +87,6 @@ public class Folder implements Parcelable{
     @ColumnInfo(name = "color")
     public String color;
 
-    public Folder() {
-
-    }
 
     @Override
     public boolean equals(Object o) {
@@ -71,4 +132,4 @@ public class Folder implements Parcelable{
         parcel.writeString(name);
         parcel.writeString(color);
     }
-}
+}*/

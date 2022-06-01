@@ -44,32 +44,31 @@
     <string name="start_long_break_after_text">Начать долгий перерыв после</string>
 
 
-
     <string-array name="work_duration_array">
-        <item>20 minutes</item>
-        <item>25 minutes</item>
-        <item>30 minutes</item>
-        <item>40 minutes</item>
-        <item>55 minutes</item>
+        <item>20 минут</item>
+        <item>25 минут</item>
+        <item>30 минут</item>
+        <item>40 минут</item>
+        <item>55 минут</item>
     </string-array>
     <string-array name="short_break_duration_array">
-        <item>3 minutes</item>
-        <item>5 minutes</item>
-        <item>10 minutes</item>
-        <item>15 minutes</item>
+        <item>3 минут</item>
+        <item>5 минут</item>
+        <item>10 минут</item>
+        <item>15 минут</item>
     </string-array>
     <string-array name="start_long_break_after_array">
-        <item>2 sessions</item>
-        <item>3 sessions</item>
-        <item>4 sessions</item>
-        <item>5 sessions</item>
-        <item>6 sessions</item>
+        <item>2 сессии</item>
+        <item>3 сессии</item>
+        <item>4 сессии</item>
+        <item>5 сессии</item>
+        <item>6 сессии</item>
     </string-array>
     <string-array name="long_break_duration_array">
-        <item>10 minutes</item>
-        <item>15 minutes</item>
-        <item>20 minutes</item>
-        <item>25 minutes</item>
+        <item>10 минут</item>
+        <item>15 минут</item>
+        <item>20 минут</item>
+        <item>25 минут</item>
     </string-array>
     <string name="short_break_duration_key">SHORT_BREAK_DURATION</string>
     <string name="long_break_duration_key">LONG_BREAK_DURATION</string>
@@ -109,5 +108,28 @@
     <string name="splash_act_name">Tamétû</string>
     <string name="tagline">Get things done, faster</string>
     <string name="task_hint">Enter task name</string>
+
+
+    <string name="pref_color_key_switch" translatable="false">pref_color_switch</string>
+    <string name="pref_color_switch">Поменять цвет основной темы?</string>
+    <string name="pref_color_switch_summ">Выбрать цвет из предложенных?</string>
+    <string name="pref_color_key" translatable="false">pref_color</string>
+    <string name="pref_color_title">Выберите цвет</string>
+    <string name="pref_color_red">Зелёный</string>
+    <array name="pref_colors">
+        <item>Белый</item>
+        <item>Фиолетовый</item>
+        <item>Персиковый</item>
+    </array>
+
+
+    <string-array name="folder_color_array">
+        <item>Желтый</item>
+        <item>Красный</item>
+        <item>Синий</item>
+        <item>Зеленый</item>
+    </string-array>
+    <string name="folder_color_key">FOLDER_COLOR</string>
+
 
 </resources>

@@ -25,7 +25,7 @@ public class CheckMarkUtils {
                 .findViewById(R.id.session_completed_value_textview_main);
 
 
-       // insertPoint.removeAllViews(); //Clear out old views before adding
+       insertPoint.removeAllViews(); //Clear out old views before adding
 
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(activity);
         int n = preferences.getInt(TASK_ON_HAND_COUNT_KEY, 0);
